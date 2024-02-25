@@ -1,0 +1,44 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.about {
+&__container {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+  
+&__image {
+    width: 50%;
+    img {
+      max-width: 100%;
+      height: auto; 
+    }
+  }
+  
+&__text {
+margin-top: 1.8rem;
+margin-right: 2rem;
+border-radius: 5px;
+border: 2px solid $blue;
+padding: 2rem 1rem;
+width: 50%;
+color: $middle-blue;
+  p {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+   }
+ }
+}
+
+span {
+  margin: 0;
+  font-size: 1.65rem;
+  text-align: center;
+  padding: 0 0 0.3rem 0;
+  -webkit-text-stroke: 0.9px $light-blue;
+  color: $blue;
+  @include sparkle;
+}
