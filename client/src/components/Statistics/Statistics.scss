@@ -1,0 +1,29 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.statistics {
+    margin: 0.5rem 2rem 2rem 2rem;
+    font-size: 0.9rem;
+    table {
+    width: 35%;
+    border-collapse: collapse;
+  
+    thead {
+      background-color: rgb(168, 193, 199);
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #71909c;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background-color: #d9e1e6;
+    }
+    td {
+      &.highlight {
+        background-color: #fffdcd;
+      }
+    }
+  }
+}
