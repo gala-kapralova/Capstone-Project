@@ -1,0 +1,23 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.file__upload {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+  
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+  
+    button {
+      @include button-style;
+      margin-top: 0.5rem;
+      margin-left: 0;
+    } 
+    
+    h4 {
+      @include action;
+      margin-bottom: 0.5rem;
+    }
+  }
