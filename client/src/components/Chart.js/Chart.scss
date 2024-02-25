@@ -1,0 +1,37 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.chart {
+    margin: 2rem;
+    button {
+      margin: 0;
+    }
+&__container {
+    width: 60%; 
+    margin: auto; 
+    background-color: rgba(252, 250, 250, 0.836);
+    margin-bottom: 1rem;
+    aspect-ratio: 16 / 9; 
+  
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+&-config {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $middle-blue;
+
+    select {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+  .hide-for-export {
+    display: none !important;
+  }

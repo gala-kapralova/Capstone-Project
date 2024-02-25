@@ -4,7 +4,7 @@ import axios from 'axios';
 import FileUpload from './components/Upload/Upload';
 import TableDisplay from './components/Table/Table';
 import Statistics from './components/Statistics/Statistics';
-import VisualizationButton from './components/VisualizationButton/VisualizationButton';
+import Chart from './components/Chart/Chart';
 import DataQuality from './components/Quality/Quality';
 import SidePanel from './components/SidePanel/SidePanel';
 import About from './components/About/About';
@@ -63,7 +63,7 @@ function App() {
           </>
         );
       case 'createGraph':
-        return <VisualizationButton data={rows} />;
+        return <Chart data={rows} />;
       case 'createDashboard':
         return <DashboardBuilder data={rows} />;
       case 'export':
