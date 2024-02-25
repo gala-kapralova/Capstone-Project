@@ -5,7 +5,7 @@ import FileUpload from './components/Upload/Upload';
 import TableDisplay from './components/TableDisplay/TableDisplay';
 import Statistics from './components/Statistics/Statistics';
 import VisualizationButton from './components/VisualizationButton/VisualizationButton';
-import DataQuality from './components/DataQuality/DataQuality';
+import DataQuality from './components/Quality/Quality';
 import SidePanel from './components/SidePanel/SidePanel';
 import About from './components/About/About';
 import DashboardBuilder from './components/Dashboard/Dashboard';

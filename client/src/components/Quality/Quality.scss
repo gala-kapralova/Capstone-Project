@@ -1,0 +1,54 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+
+.quality {
+  margin-left: 2rem;
+  button {
+    margin-left: 0;
+  }
+  
+  &__metrics {
+    margin: 0.5rem 2rem 2rem 0;
+    border-radius: 5px;
+    border: 1px solid $dark-blue;
+    padding-left: 0;
+    width:20%;
+    p {
+      color: $middle-blue;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  }
+
+  &-strategy {
+    &__container {
+    margin: 0.2rem 0.5rem 2rem 0;
+    @include action;
+    font-weight: 600;
+  }
+
+
+
+    &__selector {
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      background-color: rgb(231, 236, 236);
+    }
+}
+  &-column {
+    &__selector {
+    margin-right: 0.5rem;
+  }
+  &__input {
+    margin-right: 0.5rem;
+}
+  }
+}
+
+button {
+  @include button-style;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
