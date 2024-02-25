@@ -1,0 +1,44 @@
+@import "./styles/partials/global";
+@import "./styles/partials/variables";
+@import "./styles/partials/mixins";
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    position: relative; 
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./assets/images/background.png');
+    opacity: 0.2; 
+    background-size: cover;
+    background-position: center; 
+    z-index: -1; 
+  }
+}
+.main-content {
+  flex-grow: 1; 
+  overflow-y: auto;
+  height: 100vh; 
+  position: relative; 
+}
+
+p {
+  margin-left: 2rem;
+}
+
+.button {
+  @include button-style;
+}
+
+h1, span {
+  @include sparkle;
+}
