@@ -1,0 +1,34 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.dashboard__builder {
+    .layout__selector {
+      margin-bottom: 0;
+      button {
+        margin-right: 10px;
+      }
+    }
+  
+    .charts {
+      display: flex;
+      flex-wrap: wrap;
+  
+      &.layout-1x1, &.layout-2x1 {
+        .dashboard-chart__container {
+          flex-basis: 100%;
+        }
+      }
+  
+      &.layout-2x2 {
+        .dashboard-chart__container {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+
+  h3 {
+    @include action;
+    margin-left: 2rem;
+  }
