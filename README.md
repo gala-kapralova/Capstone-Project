@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Data Kapellmeister** is a data analyzing tool designed to offer an integrated solution for importing, wrangling, exploring, and visualizing data. By streamlining these processes, it aims to reduce the time and complexity involved in preparing data for analysis and visualization, making it an invaluable resource for data analysts, scientists, and anyone involved in data-driven decision-making.
+**Data Kapellmeister** is a data analyzing tool designed to offer an integrated solution for importing, wrangling, exploring, and visualizing data, with the added capability of exporting cleaned datasets and visualization results. By streamlining these processes, it aims to reduce the time and complexity involved in preparing data for analysis and visualization, making it an invaluable resource for data analysts, scientists, and anyone involved in data-driven decision-making.
 
 ### Problem
 
@@ -25,9 +25,19 @@ The primary users of Data Kapellmeister will be data analysts, scientists, resea
 
 ### Tech Stack
 
-* Frontend: React for building the user interface, Axios for HTTP requests, and Sass for styling.
-* Backend: Node.js and Express for server-side logic, Multer for handling file uploads, csv-parser for parsing CSV files, and uuid for generating unique identifiers for datasets.
-* Visualization: Chart.js for generating data visualizations.
+* **Frontend**:
+  * **React**: Used for building the interactive user interface.
+  * **Axios**: Handles HTTP requests to the backend.
+  * **Sass**: Enhances CSS styling capabilities.
+  * **html2canvas**: Enables capturing screenshots of web content as images.
+  * **jsPDF**: Allows for generating PDF documents from web content.
+* **Backend**:
+  * **Node.js** and **Express**: Form the core of the server-side logic.
+  * **Multer**: Manages file uploads, specifically for handling CSV file input.
+  * **csv-parser**: Parses CSV files, enabling easy manipulation and analysis of tabular data.
+  * **uuid**: Generates unique identifiers for each dataset, ensuring data integrity and easy retrieval.
+* **Visualization**:
+  * **Chart.js**: Creates dynamic and responsive data visualizations, offering a wide range of chart types for comprehensive data analysis.
 
 ### APIs
 
@@ -36,19 +46,16 @@ Data Kapellmeister currently facilitates data import through a straightforward f
 ### Sitemap
 
 * **Upload** Component: Where users can upload CSV files.
-* **Data Quality** Component: Displays quality metrics of uploaded data.
+* **Quality** Component: Displays quality metrics of uploaded data.
 * **Statistics** Component: Shows basic statistical analysis of the data.
-* **Visualization** Component: Allows users to configure visualization type, create and view dashboards.
+* **Chart** Component: Allows users to configure visualization type, create and view a single chart.
+* **Dashboard** Component: Allows users to configure visualization type, create and view dashboards.
 * **Export** Component: Enables users to select specific results, such as a dataframe, data visualizations, to save and export for external use.
 
 ### Mockups
 
 Here is the mockup showcasing the core functionality.
-![Upload and Show](/Mockup/upload_and_show.png)
-![Stats and Quality](/Mockup/stats_and_quality.png)
-![Chart](/Mockup/chart.png)
-![Dashboard](/Mockup/dashboard.png)
-![Export](/Mockup/export.png)
+![How-to](/client/src/assets/images/about.gif)
 
 ### Data
 
