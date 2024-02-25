@@ -1,0 +1,56 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.side {
+  &__panel {
+    width: 220px; 
+    background-image: url('../../assets/images/side-menu.png');
+    background-size: cover; 
+    background-position: center; 
+    padding: 20px;
+    position: relative; 
+    z-index: 2; 
+    color: $light-aqua;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__container {
+    background-color: rgba(38, 52, 65, 0.527);
+    padding: 0.5rem 3.5rem; 
+    margin: 0 2px 5px 2px; 
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 0.3px $dark-blue;
+    color: $light-blue;
+  }
+}
+  h1 {
+    background-color: rgba(38, 52, 65, 0.527);
+    margin: 0;
+    font-size: 1.65rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 0 0.3rem 0;
+    -webkit-text-stroke: 0.9px $light-blue;
+    color: $dark-blue;
+    border-bottom: 1px solid $light-blue;
+    border-top: 1px solid $light-blue;
+    @include sparkle;
+  }
+ 
+p {
+  margin-left: 2rem;
+  @include action;
+  font-weight: 600;
+}
