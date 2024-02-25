@@ -1,0 +1,42 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/global";
+
+.table {
+  &__structure {
+    max-height: 65vh; 
+    overflow-y: auto; 
+    margin: 2rem 2rem 3rem 2rem; 
+    font-size: 0.8rem;
+    width: 96%;
+ 
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  &__limit {
+    margin: 0.5rem 2rem 0 2rem;
+    color: rgb(17, 80, 95);
+    input {
+      margin-left: 0.5rem;
+    }
+  }
+}
+  h3 {
+    @include action;
+  }

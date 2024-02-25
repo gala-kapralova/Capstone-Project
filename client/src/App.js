@@ -2,7 +2,7 @@ import './App.scss';
 import { useState } from 'react';
 import axios from 'axios';
 import FileUpload from './components/Upload/Upload';
-import TableDisplay from './components/TableDisplay/TableDisplay';
+import TableDisplay from './components/Table/Table';
 import Statistics from './components/Statistics/Statistics';
 import VisualizationButton from './components/VisualizationButton/VisualizationButton';
 import DataQuality from './components/Quality/Quality';
