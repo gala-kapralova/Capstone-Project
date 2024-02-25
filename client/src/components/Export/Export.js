@@ -30,7 +30,6 @@ const Export = ({ data, graphElementId, dashboardElementId }) => {
     };
 
     const exportGraphToPDF = async (graphElementId) => {
-        console.log("Exporting graph with ID:", graphElementId);
         const element = document.getElementById(graphElementId);
         if (!element) {
             console.error('Element not found:', graphElementId);
@@ -41,7 +40,9 @@ const Export = ({ data, graphElementId, dashboardElementId }) => {
         const pdf = new jsPDF({
             orientation: 'landscape',
         });
-        pdf.addImage(imgData, 'PNG', 0, 0);
+
+        const marginTop = (16 / 96) * 72;
+        pdf.addImage(imgData, 'PNG', 0, marginTop);
         pdf.save('graph.pdf');
     };
 

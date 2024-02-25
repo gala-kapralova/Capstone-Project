@@ -179,7 +179,7 @@ const Chart = ({ data, graphElementId }) => {
         </div>
       )}
       {xAxis && (chartType !== 'Pie' ? yAxis : true) && (
-        <div className="chart__container" id={graphElementId}>
+        <div className="chart__container" id="myGraphElementId">
           <ChartComponent data={getChartData()} options={getChartOptions()} />
         </div>
       )}
