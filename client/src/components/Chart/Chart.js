@@ -162,7 +162,7 @@ const Chart = ({ data, graphElementId }) => {
           </select>
         </label>
         <label>
-            Category:
+             X-Axis/Category:
             <select onChange={e => setXAxis(e.target.value)} value={xAxis}>
               {columns.map(col => <option key={col} value={col}>{col}</option>)}
             </select>
