@@ -42,7 +42,8 @@ const Export = ({ data, graphElementId, dashboardElementId }) => {
         });
 
         const marginTop = (16 / 96) * 72;
-        pdf.addImage(imgData, 'PNG', 0, marginTop);
+        const marginLeft = 20;
+        pdf.addImage(imgData, 'PNG', marginLeft, marginTop);
         pdf.save('graph.pdf');
     };
 

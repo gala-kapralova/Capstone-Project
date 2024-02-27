@@ -14,12 +14,16 @@
       display: flex;
       flex-wrap: wrap;
   
-      &.layout-1x1, &.layout-2x1 {
+      &.layout-1x1 {
         .dashboard-chart__container {
           flex-basis: 100%;
         }
       }
-  
+      &.layout-2x1 {
+        .dashboard-chart__container {
+          flex-basis: 30%;
+        }
+      }
       &.layout-2x2 {
         .dashboard-chart__container {
           flex-basis: 50%;

@@ -25,6 +25,6 @@ exports.upload = (req, res) => {
       });
       const datasetId = uuid.v4();
       datasets[datasetId] = results;
-      res.json({ datasetId, rows: results.slice(0, 100) });
+      res.json({ datasetId, rows: results.slice(0, 210) });
     });
 };
