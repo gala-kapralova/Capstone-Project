@@ -36,7 +36,7 @@ function App() {
 
   const calculateStatistics = async () => {
     try {
-      const response = await axios.post('http://data-kapellmeister-production.up.railway.app/statistics', { data: rows });
+      const response = await axios.post('https://data-kapellmeister-production.up.railway.app/statistics', { data: rows });
       setStatistics(response.data);
     } catch (error) {
       console.error('Error calculating statistics:', error);

@@ -15,7 +15,7 @@ const DataQuality = ({ data, setRows }) => {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.post('http://data-kapellmeister-production.up.railway.app/quality', { data });
+      const response = await axios.post('https://data-kapellmeister-production.up.railway.app/quality', { data });
       setQualityMetrics(response.data);
       setMissingRows(response.data.missingRows || []);
     } catch (error) {

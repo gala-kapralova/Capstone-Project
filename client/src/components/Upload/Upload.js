@@ -24,7 +24,7 @@ export default function FileUpload({ setRows }) {
     formData.append('file', selectedFile);
 
     try {
-      const response = await axios.post('http://data-kapellmeister-production.up.railway.app/upload', formData);
+      const response = await axios.post('https://data-kapellmeister-production.up.railway.app/upload', formData);
       if (response.data && response.data.rows) {
         setInternalRows(response.data.rows);
         setRows(response.data.rows);
