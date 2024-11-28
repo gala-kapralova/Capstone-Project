@@ -8,7 +8,19 @@ const quality = require('./routes/quality');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const allowedOrigins = [
+    'https://harmonious-marigold-3a8f8e.netlify.app',
+    'http://localhost:3000' 
+];
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+}));
 
 app.use(upload);
 app.use(statistics);
