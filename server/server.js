@@ -9,7 +9,7 @@ const quality = require('./routes/quality');
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-    'https://data-kapellmeister.netlify.app/',
+    'https://data-kapellmeister.netlify.app',
     'http://localhost:3000' 
 ];
 app.use(cors({
